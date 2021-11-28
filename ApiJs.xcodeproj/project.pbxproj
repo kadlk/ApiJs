@@ -13,6 +13,12 @@
 		7815BB5B27510AB400354879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7815BB5927510AB400354879 /* Main.storyboard */; };
 		7815BB5D27510AB600354879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7815BB5C27510AB600354879 /* Assets.xcassets */; };
 		7815BB6027510AB600354879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7815BB5E27510AB600354879 /* LaunchScreen.storyboard */; };
+		7847344D2752307C00BB6215 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847344C2752307C00BB6215 /* NewsTableViewController.swift */; };
+		7847344F2752392B00BB6215 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847344E2752392B00BB6215 /* News.swift */; };
+		78473451275246F200BB6215 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78473450275246F200BB6215 /* NewsCell.swift */; };
+		78CD12B727510E2F00291650 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD12B527510E2F00291650 /* JokesViewController.swift */; };
+		78CD12B827510E3000291650 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD12B627510E2F00291650 /* Joke.swift */; };
+		78CD12BE27513D1400291650 /* Extension + UiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD12BD27513D1400291650 /* Extension + UiButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		7815BB5C27510AB600354879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7815BB5F27510AB600354879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7815BB6127510AB600354879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7847344C2752307C00BB6215 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		7847344E2752392B00BB6215 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		78473450275246F200BB6215 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		78CD12B527510E2F00291650 /* JokesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
+		78CD12B627510E2F00291650 /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		78CD12BD27513D1400291650 /* Extension + UiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UiButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		7815BB5227510AB400354879 /* ApiJs */ = {
 			isa = PBXGroup;
 			children = (
-				7815BB5327510AB400354879 /* AppDelegate.swift */,
-				7815BB5527510AB400354879 /* SceneDelegate.swift */,
-				7815BB5727510AB400354879 /* ViewController.swift */,
-				7815BB5927510AB400354879 /* Main.storyboard */,
 				7815BB5C27510AB600354879 /* Assets.xcassets */,
-				7815BB5E27510AB600354879 /* LaunchScreen.storyboard */,
 				7815BB6127510AB600354879 /* Info.plist */,
+				78CD12BA27510E4F00291650 /* ViewControllers */,
+				78CD12B927510E3D00291650 /* Models */,
+				78CD12BB27510E6800291650 /* Delegates */,
+				78CD12BC27510E7500291650 /* Stroryboards */,
+				784734542753E11600BB6215 /* Extensions */,
 			);
 			path = ApiJs;
+			sourceTree = "<group>";
+		};
+		784734542753E11600BB6215 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78CD12BD27513D1400291650 /* Extension + UiButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78CD12B927510E3D00291650 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78CD12B627510E2F00291650 /* Joke.swift */,
+				7847344E2752392B00BB6215 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78CD12BA27510E4F00291650 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7815BB5727510AB400354879 /* ViewController.swift */,
+				78CD12B527510E2F00291650 /* JokesViewController.swift */,
+				7847344C2752307C00BB6215 /* NewsTableViewController.swift */,
+				78473450275246F200BB6215 /* NewsCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		78CD12BB27510E6800291650 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7815BB5327510AB400354879 /* AppDelegate.swift */,
+				7815BB5527510AB400354879 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		78CD12BC27510E7500291650 /* Stroryboards */ = {
+			isa = PBXGroup;
+			children = (
+				7815BB5927510AB400354879 /* Main.storyboard */,
+				7815BB5E27510AB600354879 /* LaunchScreen.storyboard */,
+			);
+			path = Stroryboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7815BB5827510AB400354879 /* ViewController.swift in Sources */,
+				78473451275246F200BB6215 /* NewsCell.swift in Sources */,
+				78CD12B827510E3000291650 /* Joke.swift in Sources */,
+				7847344F2752392B00BB6215 /* News.swift in Sources */,
 				7815BB5427510AB400354879 /* AppDelegate.swift in Sources */,
 				7815BB5627510AB400354879 /* SceneDelegate.swift in Sources */,
+				78CD12B727510E2F00291650 /* JokesViewController.swift in Sources */,
+				7847344D2752307C00BB6215 /* NewsTableViewController.swift in Sources */,
+				78CD12BE27513D1400291650 /* Extension + UiButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +398,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
